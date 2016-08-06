@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ "$1" != "" ]; 
+then
+   searchCriteria1=$1
+   ps -eaf | grep erebos | grep -i $searchCriteria1
+fi
+if [ "$1" == "" ]; 
+then
+   ps -eaf | grep erebos
+fi
+
+
