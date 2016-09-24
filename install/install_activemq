@@ -1,0 +1,11 @@
+#!/bin/bash
+
+source mylib.sh
+
+tarFile="apache-activemq-5.14.0-bin.tar.gz"
+execCmd "wget http://archive.apache.org/dist/activemq/5.14.0/$tarFile"
+execCmd "tar -xvf $tarFile"
+execCmd "cd apache-activemq-5.14.0/bin/"
+
+# start up activemq
+execCmd "./activemq console"
