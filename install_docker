@@ -1,0 +1,11 @@
+#!/bin/bash
+
+source mylib.sh
+
+
+echo "---- Installing docker ----"
+execCmd "sudo apt-get install docker"
+execCmd "sudo apt-get install docker.io"
+execCmd "sudo service docker start"
+execCmd "sudo docker run hello-world"
+echo "---- docker installed successfully ----"
