@@ -4,4 +4,4 @@
 #xrandr | grep ' connected'
 
 # set the primary screen
-sudo xrandr --output HDMI3 --primary
+sudo xrandr --output HDMI1 --primary
