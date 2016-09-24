@@ -6,10 +6,10 @@ function execCmd() {
   mn="execCmd()"
   command2exec=$@
   echo "$filename - $mn - Execute command '$command2exec' now..."
-  eval $command2exec
-  if [ $? -ne 0 ]; then 
+  if  eval $command2exec ; then 
+     echo "$filename - $mn - Command '$command2exec' executed successfully"
+  else
      echo "$filename - $mn - '$command2exec' failed with rc: $?"
-     exit $? 
+     exit $?
   fi
-  echo "$filename - $mn - Command '$command2exec' executed successfully"
 }
