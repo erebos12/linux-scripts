@@ -8,7 +8,6 @@ function test_execCmd_validCommand() {
  mn="test_checkRC_validCommand()"
  echo "Test test_execCmd_validCommand..."
  execCmd "pwd"
- echo "rc is:  $?"
  if [ $? -ne 0 ]; then 
      echo "Error in test $mn. Command must be successfully executed." 
      exit 1
