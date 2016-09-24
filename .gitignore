@@ -1,0 +1,7 @@
+# ignore files and folder from home
+JavaFuzz.jar
+Xanitizer-2.3.0/
+eclipse-neon/
+eclipse/
+javaFuzz
+
