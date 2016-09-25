@@ -1,0 +1,17 @@
+#!/bin/bash
+
+programName=`basename "$0"`
+version='1.0'
+
+Usage () {
+    echo >&2 "$programName - apply command to all files in all subdirectories, version $version
+    usage: $programName command [arg  ...]
+     e.g. actaf ls -rtl 
+    The given command will be applied to all files in the current
+    and in all subdirectories -- USE WITH CARE."
+    exit 1
+}
+
+[ $# -lt 1 ] && Usage
+
+find * -type f -print | xargs "$@"
