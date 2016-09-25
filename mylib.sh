@@ -1,6 +1,6 @@
  #!/bin/bash
 
-filename="mylib.sh"
+fileName=`basename "$0"`
 
 function execCmd() {
   fn="execCmd()"
